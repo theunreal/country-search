@@ -1,0 +1,16 @@
+<country-filters
+  [countries]="countries"
+  (onUpdate)="updateCountries($event)"></country-filters>
+
+<md-toolbar class="mt-3">
+  List of countries ({{countries.length}} found)
+</md-toolbar>
+
+<section class="container-fluid ">
+  <div class="row">
+    <country *ngFor="let country of countries"
+    [country]="country"
+     class="col-12 col-sm-6 col-md-4 col-lg-2">
+    </country>
+  </div>
+</section>

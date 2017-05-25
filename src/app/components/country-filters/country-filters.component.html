@@ -1,0 +1,16 @@
+<md-toolbar>Filters</md-toolbar>
+
+<section class="container-fluid">
+
+  <filter [data]="regions"
+          placeHolder="Select Region"
+          (onFilter)="updateRegion($event)"
+          *ngIf="regions.length"></filter>
+
+  <filter [data]="languages"
+          placeHolder="Select Language"
+          (onFilter)="updateLanguages($event)"
+          *ngIf="languages.length"
+          class="ml-3"></filter>
+
+</section>

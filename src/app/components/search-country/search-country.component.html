@@ -1,0 +1,10 @@
+<h1>Start now by typing a country name</h1>
+
+<form method="post">
+  <md-input-container>
+    <input mdInput placeholder="Country Name"
+     [(ngModel)]="countryName"
+     (ngModelChange)="updateSearch($event)"
+     name="countryName">
+  </md-input-container>
+</form>

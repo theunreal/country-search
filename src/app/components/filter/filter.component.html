@@ -1,0 +1,7 @@
+<md-select placeholder="{{placeHolder}} ({{data.length}})"
+ [(ngModel)]="filterValue"
+ (ngModelChange)="filter($event)">
+  <md-option *ngFor="let item of data" [value]="item">
+    {{ item }}
+  </md-option>
+</md-select>

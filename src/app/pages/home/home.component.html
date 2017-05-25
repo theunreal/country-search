@@ -1,0 +1,8 @@
+<div class="jumbotron text-center">
+  <search-country (onChange)="updateSearch($event)"></search-country>
+</div>
+
+<country-list
+  *ngIf="countryList.length"
+  [countries]="countryList">
+</country-list>

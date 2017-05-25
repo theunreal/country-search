@@ -1,0 +1,11 @@
+<md-card class="m-3">
+  <md-card-title class="countryName">
+    {{country.name}}, {{country.region}}
+  </md-card-title>
+  <md-card-content>
+    <span *ngIf="country.borders.length">
+      Borders: {{country.borders}}
+    </span>
+    Population: {{country.population | number}}
+  </md-card-content>
+</md-card>
